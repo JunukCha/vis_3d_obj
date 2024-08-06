@@ -8,6 +8,7 @@ st.title('GIF 공유 웹 애플리케이션')
 # GIF 파일 목록 및 태그
 gif_directory = 'data'
 category_list = glob.glob(os.path.join(gif_directory, "*"))
+category_list.sort()
 
 gifs_with_tags = {}
 
